@@ -3,7 +3,7 @@
 function log(tag,varargin)   
 
     % NOTE: to disable/enable logging (un)comment `return` statement below
-    return
+    % return
 
     levels = ["DEBUG","INFO","WARNING","ERROR","CRITICAL","FATAL"];
     log_level = find(tag==levels);   
@@ -12,7 +12,7 @@ function log(tag,varargin)
 
     % NOTE: could add branch here to disable log levels. However, it is faster to disable in actual functions
 
-    LOGGING_LEVEL = 1;
+    LOGGING_LEVEL = 2;
     if log_level<LOGGING_LEVEL
         return
     end
